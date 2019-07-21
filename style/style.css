@@ -1,0 +1,54 @@
+* {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+body {
+    background-color: #eee;
+}
+
+img {
+    border-radius: 50%;
+    width: 130px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+}
+
+
+.controls span {
+    display:block;
+    font-size: 10px;
+    
+}
+
+#profile h1 {
+    margin-top: 10px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#profile p {
+    font-size: 21px;
+}
+
+#wrapper {
+    margin-top: 80px;
+    border: 1px solid gray;
+    background-color: white;
+
+}
+
+
+
+.footer {
+    text-align: center;
+
+}
+
+.footer p {
+    margin: 0;
+    font-size: 12px;
+}

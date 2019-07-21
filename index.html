@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>Michel, forever!</title>
+  </head>
+  <body>
+
+    <div class="container">            
+        <div class="row">
+            <div id="wrapper" class="col-md-10 offset-md-1 shadow p-3 mb-5 bg-white rounded">
+
+                <div id="profile" class="row" style="margin-top: 30px;">
+
+                    <div class="col-md-2 offset-md-2">
+                        <img src="images/michel.jpeg">                        
+                    </div>
+                    <div class="col-md-8">
+                        <h1>Michel, forever</h1>
+                        <p>Página dedicada ao maior catedrático de todos os tempos</p>
+                    </div>
+                </div>
+
+                <hr/>
+
+                <div class="row controls" style="margin: 50px 0 50px 0;">
+
+                  <div class="col-md-2 offset-md-2">
+                      <button class="btn btn-outline-warning" onclick="playAudio('myfriend');"><i class="fa fa-play-circle fa-4x"></i></button>
+                      <span>My frieeend</span>
+                  </div>
+
+                  <div class="col-md-2">
+                      <button class="btn btn-outline-primary" onclick="playAudio('brutalidade');"><i class="fa fa-play-circle fa-4x"></i></button>
+                      <span>Brutalidade</span>
+                  </div>
+
+                  <div class="col-md-2">
+                      <button class="btn btn-outline-success" onclick="playAudio('fuleragem');"><i class="fa fa-play-circle fa-4x"></i></button>
+                      <span>Fuleragem</span>
+                  </div>
+
+                  <div class="col-md-2">
+                      <button class="btn btn-outline-danger" onclick="playAudio('mais-moderno');"><i class="fa fa-play-circle fa-4x"></i></button>
+                      <span>O que há de mais muderno...</span>
+                  </div>
+
+                  
+                  
+                </div>
+
+                    
+
+                <hr/>
+
+                <div class="row footer">
+                    <div class="col-md-12">
+                      <p>Made with <i class="fa fa-heart"></i> for our friend!</p>
+                    </div>
+
+                </div>
+
+                
+            </div>            
+        </div>
+        
+    </div>
+
+    <audio id="brutalidade" src="audios/brutalidade.ogg" type="audio/ogg"></audio>
+    <audio id="fuleragem" src="audios/fuleragem.ogg" type="audio/ogg"></audio>
+    <audio id="mais-moderno" src="audios/mais-moderno.ogg" type="audio/ogg"></audio>
+    <audio id="myfriend" src="audios/myfriend.ogg" type="audio/ogg"></audio>
+
+    <script>
+      function playAudio(id) {
+        var sound = document.getElementById(id);
+        if (sound)
+          sound.play();
+        
+      }
+    </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
